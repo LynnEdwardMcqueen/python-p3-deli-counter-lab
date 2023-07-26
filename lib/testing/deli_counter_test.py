@@ -27,7 +27,7 @@ class TestDeliCounter:
         line(TestDeliCounter.OTHER_DELI)
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "The line is currently: 1. Logan 2. Avi 3. Spencer\n")
-
+                                           
         captured_out = io.StringIO()
         sys.stdout = captured_out
         line(TestDeliCounter.ANOTHER_DELI)
